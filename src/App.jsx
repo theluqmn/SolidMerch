@@ -1,6 +1,7 @@
 import { createSignal } from 'solid-js';
 
 import banner from './assets/banner.png'
+import { A } from '@solidjs/router';
 
 function App(props) {
   console.log("Hello World");
@@ -23,9 +24,13 @@ function App(props) {
         >
           light_mode
         </span>
+
         <h1>
           Solid Merch
         </h1>
+
+        <A href="/">Home</A>
+        <A href="/cart">Cart</A>
       </header>
 
       <img class= "rounded-md"src={banner} alt="site banner"></img>
