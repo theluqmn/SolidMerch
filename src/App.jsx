@@ -1,8 +1,8 @@
 import { createSignal } from 'solid-js';
-import banner from './assets/banner.png'
-import Card from './components/Card';
 
-function App() {
+import banner from './assets/banner.png'
+
+function App(props) {
   console.log("Hello World");
 
   const [darkTheme, setDarkTheme] = createSignal(false);
@@ -30,18 +30,7 @@ function App() {
 
       <img class= "rounded-md"src={banner} alt="site banner"></img>
 
-      <div class= "grid grid-cols-3 gap-4 my-4">
-        <Card rounded={true} flat= {false}>
-          <h2>Solid blue</h2>
-          <p>Epic blue color, that is very iconic and very blue.</p>
-          <button class="btn">Get now</button>
-        </Card>
-        <Card rounded={true} flat={false}>
-          <h2>Navy blue</h2>
-          <p>Deep blue color, very premium, old money ahh color.</p>
-          <button class="btn">Get now</button>
-        </Card>
-      </div>
+      {props.children}
     </div>
   );
 };
