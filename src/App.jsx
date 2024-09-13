@@ -26,11 +26,12 @@ function App(props) {
         </span>
 
         <h1>
-          Solid Merch
+          Solitude
         </h1>
 
         <A href="/">Home</A>
         <A href="/cart">Cart</A>
+        <A href="/Solidarity">About Us</A>
       </header>
 
       <img class= "rounded-md"src={banner} alt="site banner"></img>
