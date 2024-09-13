@@ -1,0 +1,18 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "title": "Solid Blue",
+            "description": "Epic blue color, that is iconic and very blue",
+            "price": 6.99,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Solid_blue.svg/1024px-Solid_blue.svg.png"
+        },
+        {
+            "id": 2,
+            "title": "Navy Blue",
+            "description": "Very premium, very old money",
+            "price": 15.99,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/000080_Navy_Blue_Square.svg/2048px-000080_Navy_Blue_Square.svg.png"
+        }
+    ]
+}
