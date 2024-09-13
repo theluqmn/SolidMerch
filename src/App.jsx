@@ -2,6 +2,7 @@ import { createSignal } from 'solid-js';
 
 import banner from './assets/banner.png'
 import { A } from '@solidjs/router';
+import { useCartContext } from './context/CartContext';
 
 function App(props) {
   console.log("Hello World");
@@ -11,6 +12,13 @@ function App(props) {
   function toggleTheme() {
     setDarkTheme(!darkTheme());
   };
+
+  const { items } = useCartContext()
+  const cartQuantity = () => {
+    return items.reduce((acc, current) => {
+      return acc + current.quantity
+    }, 0)
+  }
 
   return (
     <div class="container m-auto">
@@ -30,7 +38,7 @@ function App(props) {
         </h1>
 
         <A href="/">Home</A>
-        <A href="/cart">Cart</A>
+        <A href="/cart">Cart ({cartQuantity()})</A>
         <A href="/Solidarity">About Us</A>
       </header>
 
