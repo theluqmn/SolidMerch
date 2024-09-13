@@ -13,6 +13,21 @@
             "description": "Very premium, very old money",
             "price": 15.99,
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/000080_Navy_Blue_Square.svg/2048px-000080_Navy_Blue_Square.svg.png"
+        },
+        {
+            "id": 3,
+            "title": "Intel Blue",
+            "description": "Team blue's official blue shade, long live Intel",
+            "price": 14.90,
+            "image": "https://encycolorpedia.com/0071c5.png"
+
+        },
+        {
+            "id": 4,
+            "title": "Uranian Blue",
+            "description": "Blue, just like Uranus",
+            "price": 6.69,
+            "image": "https://www.perception.io/api/color-image/B0E2FF.png"
         }
     ]
 }

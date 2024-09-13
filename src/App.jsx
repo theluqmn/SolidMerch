@@ -23,7 +23,7 @@ function App(props) {
   return (
     <div class="container m-auto">
       <header 
-        class="my-4 p-2 text-xl flex items-center gap-4"
+        class="my-4 p-2 text-xl flex items-center gap-4 sticky top-0 z-10 bg-neutral-100 rounded-md"
         classList={{"bg-neutral-900": darkTheme(), "text-white": darkTheme()}}
       >
         <span 
